@@ -1,9 +1,7 @@
 var input = document.getElementById("inputBox");
 var buttons = document.querySelectorAll("button");
-// input.value = 5
 var string = "";
 var arr = Array.from("button");
-// vikash code
 function appendToResult(value) {
   input.value += value;
 }
@@ -24,57 +22,13 @@ function percentageToResult() {
 }
 function calculateResult() {
   try {
-    const inputValue = input.value;
-    const finalCalculate = eval(inputValue);
-    input.value = finalCalculate;
-    // input.value = eval(input.value);
+    input.value = eval(input.value);
   } catch (error) {
     document.getElementById("inputBox").value = "Error";
   }
 }
 
-// End Vikash Code
 
-// arr.forEach(button =>
-//     {
-//         button.addEventlistener('click',(button)=> {
-//             if(button.target.innerHTML == '='){
-//                 string = eval(string);
-//                 input.value = string;
-//             }
-
-//             else if (button.targetHTML == 'AC'){
-//                 string = "";
-//                 input.value = string;
-//             }
-//             else{
-//                 string += button.target.innerHTML;
-//                 input.value = string;
-//             }
-
-//         })
-//     })
-//     var input = document.getElementById('inputBox');
-// var buttons = document.querySelectorAll('button');
-
-// var string = "";
-// var arr = Array.from('button');
-// arr.forEach(button =>
-//     {
-//         button.addEventlistener('click',(button)=> {
-//             if(button.target.innerHTML == '='){
-//                 string = eval(string);
-//                 input.value = string;
-//             }
-
-//             else if (button.targetHTML == 'AC'){
-//                 string = "";
-//                 input.value = string;
-//             }
-//             else{
-//                 string += button.target.innerHTML;
-//                 input.value = string;
-//             }
 
 //         })
 //     })
